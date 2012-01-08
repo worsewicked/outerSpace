@@ -1,0 +1,32 @@
+outerSpace README.
+
+Part 1 USERS
+
+Hey guys, enjoy the game, use arrow keys to move the ship around and try and hit as many asteroids with the
+ship as you can before the time expires.
+
+My high score is 36. :)
+
+Part 2 DEVELOPERS
+
+Hey guys, I have a to do list: 
+
+1. Add power ups.
+	a. Increased Time
+	b. Increased ship Speed
+	c. Increased Points
+	d. Decrased ship Speed
+	e. Decreased Time
+	f. Decreased Points
+
+2. Stop any FPS Lag.
+
+3. Add ship health.
+
+4. Add the ability to shoot asteroids.
+
+5. Multiplayer function.
+
+6. Better graphics.
+
+7. Better Physics.
