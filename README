@@ -3,13 +3,26 @@ outerSpace README.
 Part 1 USERS
 
 Hey guys, enjoy the game, use arrow keys to move the ship around and try and hit as many asteroids with the
-ship as you can before the time expires.
+ship as you can before the time expires. This game is still in its very early stages of development and it still
+has a long way to go in terms of updates etc. 
+
+So watch this space, because I think I can really turn this into something great with the right team and the right
+kind of support.
 
 My high score is 36. :)
 
 Part 2 DEVELOPERS
 
-Hey guys, I have a to do list: 
+To start off, I think it's great that you guys are joining in with this project, thank you for that.
+
+Next up, I am currently working on the next big update which involves the game being split down into separate classes,
+I basically rewrote the whole of the code into a new program so now it should be easier to edit the asteroids, and
+have more than one of them at a time.
+
+I also managed to get someone to do some better graphics for me, but if there's anyone who is really great at graphic
+design, please see number 6 on the to do list.
+
+I have a to do list here, this will be where all of out primary goals go, I will also put this on the Wiki: 
 
 1. Add power ups.
 	a. Increased Time
