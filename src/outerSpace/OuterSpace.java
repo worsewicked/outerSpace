@@ -149,7 +149,6 @@ public class OuterSpace extends GraphicsProgram implements KeyListener{
 			
 			pointsLbl.setLabel("Points: " + points);
 			pause(1);
-			remove(finalScore);
 			
 			if(time == 0) {
 			
@@ -198,6 +197,8 @@ public class OuterSpace extends GraphicsProgram implements KeyListener{
 			time = 10;
 			points = 0;
 			remove(finalScore);
+			remove(sOQ);
+			remove(cat);
 			
 		}
 		if(key == KeyEvent.VK_C){
