@@ -97,42 +97,31 @@ public class OuterSpace extends GraphicsProgram implements KeyListener{
 	}
 
 	public void animateAsteroid(Asteroid asteroid) {
+
+		while(true) {
+			asteroid.move(deltaX, deltaY);
 		
-		while(asteroid.getY() + asteroid.getHeight() < 800) {
-			
-			if(asteroid.getBounds().intersects(ship.getBounds()) || ship.getBounds().intersects(asteroid.getBounds())) {
+			if(asteroid.getBounds().intersects(ship.getBounds())) {
 				
-				asteroid.setLocation(Math.random() * 750, Math.random() * 250);
+				asteroid.setLocation(Math.random() * getSize().getWidth(), Math.random() * getSize().getHeight());
 				time += 1;
 				points += 1;
 			
 			}
 			
-			asteroid.move(0, 10);
 			pause(5);
 			
-			if(asteroid.getY() + asteroid.getHeight() > 800) {
-				
-				while(asteroid.getY() + asteroid.getHeight() > 0) {
-				
-					asteroid.move(0, -10);
-					pause(5);
-					
-					if(asteroid.getBounds().intersects(ship.getBounds()) || ship.getBounds().intersects(asteroid.getBounds())) {
-						
-						asteroid.setLocation(Math.random() * 750, Math.random() * 250);
-						time += 1;
-						points += 1;
-					
-					}
-					
-					if(asteroid.getY() + asteroid.getHeight() == 0) {
-						
-						break;
-						
-					}
-				}
-			}
+			if(asteroid.getY() < 0)
+				deltaY = 10;
+
+			else if(asteroid.getY() + asteroid.getHeight() > getSize().getHeight())
+				deltaY = -10;
+
+			if(asteroid.getX() < 0)
+				deltaX = 1;
+
+			else if(asteroid.getX() + asteroid.getWidth() > getSize().getWidth())
+				deltaX = -1;
 		}
 	}
 	
@@ -226,6 +215,9 @@ public class OuterSpace extends GraphicsProgram implements KeyListener{
 	int points = 0;
 	int time = 10;
 	int health = 100;
+	//-- Asteroid motion --//
+	int deltaX = 1;
+	int deltaY = 10;
 	//------------------------------//
 	
 	//-- Creating an instance of a bullet --//
