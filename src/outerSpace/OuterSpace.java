@@ -125,7 +125,6 @@ public class OuterSpace extends GraphicsProgram implements KeyListener{
 		}
 	}
 	
-	@SuppressWarnings("deprecation")
 	public void updateTime() {
 		
 		while(time > 0) {
